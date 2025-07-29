@@ -1,0 +1,169 @@
+/*全体のリセットと基本設定*/
+body {
+    fonto-family: Arial, sans-serif;
+    background-colar: #f0f2f5; /* 背景色 */
+    display: flex; /*中央寄せのためにFlexboxを使用*/
+    justify-content: center; /* 水平方向の中央寄せ */
+    align-items: center; /* 垂直方向の中央寄せ */
+    min-height: 100vh; /*垂直中央寄せのために画面高さを最低限確保*/
+    margin: 0;
+    padding: 20px; /*上下の余白*/
+    box-sizing: border-box; /*paddingを含めて要素の幅と高さを計算*/
+}
+
+/*フォームコンテナ*/
+.container {
+    background-color: #ffffff; /*フォームの背景色*/
+    padding: 30px; /*内側の余白*/
+    border-radius: 8px; /*角を丸くする*/
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /*影をつける*/
+    width: 100%; /*幅を100%に設定*/
+    max-width: 500px; /*最大幅を400pxに制限*/
+    box-sizing: border-box; /*paddingを含めて要素の幅と高さを計算*/
+}
+
+/*フォームのタイトル*/
+h1 {
+    text-align: center; /*中央寄せ*/
+    color: #007bff; /*タイトルの文字色*/
+    margin-bottom: 30px; /*下の余白*/
+    font-size: 28px; /*フォントサイズ*/
+    padding-bottom: 15px; /*下の余白*/
+    border-bottom: 2px solid #eee; /*下線を追加*/
+}
+
+/*フォームグループ（ラベルと入力欄のセット）*/
+.form-group {
+    margin-bottom: 20px; /*各フォームグループの下の余白*/
+}
+
+.form-group label {
+    display: block; /*ラベルをブロック要素にして入力欄の上に配置*/
+    margin-bottom: 8px; /*ラベルと入力欄の間の余白*/
+    color: #555; /*ラベルの文字色*/
+    font-weight: bold; /*ラベルを太字に*/
+    text-align: left; /*左寄せ*/
+}
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group select {
+    width: 100%; /*入力欄の幅を100%に設定*/
+    padding: 12px; /*内側の余白*/
+    border: 1px solid #ccc; /*枠線の色と太さ*/
+    border-radius: 4px; /*角を丸くする*/
+    box-sizing: border-box; /*paddingを含めて要素の幅と高さを計算*/
+    font-size: 16px; /*フォントサイズ*/
+    color: #333; /*文字色*/
+    text-align: left; /*左寄せ*/
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007bff; /*フォーカス時の枠線の色*/
+    outline: none; /*アウトラインを消す*/
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /*フォーカス時の影*/
+}
+
+/*送信ボタン*/
+.submit-button {/*クラス名を変更*/
+    background-color: #007bff; /*ボタンの背景色*/
+    color: white; /*ボタンの文字色*/
+    border: none; /*枠線なし*/
+    padding: 12px 20px; /*内側の余白*/
+    border-radius: 4px; /*角を丸くする*/
+    font-size: 16px; /*フォントサイズ*/
+    cursor: pointer; /*カーソルをポインターに変更*/
+    width: auto; /*幅を自動に設定*/
+    display: block; /*ブロック要素にして中央寄せ*/
+    margin-left: 0; /*左の余白をなくす*/
+    margin-right: auto; /*左寄せ*/
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /*ホバー時の背景色*/
+}
+
+/*確認画面の表示スタイル*/
+.confirmation-details {
+    background-color: #f9f9f9; /*確認画面の背景色*/
+    padding: 20px; /*内側の余白*/
+    border-radius: 5px; /*角を丸くする*/
+    border: 1px solid #eee; /*枠線の色と太さ*/
+    margin-bottom: 20px; /*下の余白*/
+}
+
+.confirmation-details p {
+    margin-bottom: 10px; /*各項目の下の余白*/
+    font-size: 16px; /*フォントサイズ*/
+    color: #333; /*文字色*/
+    line-height: 1.5; /*行間を広くする*/
+}
+
+.confirmation-details p strong {
+    color: #007bff; /*強調表示の文字色*/
+    display: inline-block; /*インラインブロックにして余白を調整*/
+    min-width: 120px; /*ラベルの最小幅を設定*/
+    vertical-align: top; /*縦位置を上に揃える*/
+}
+
+/*エラーメッセージのスタイル*/
+.error-messages {
+    background-color: #ffebee; /*エラーメッセージの背景色*/
+    color: #d32f2f; /*エラーメッセージの文字色*/
+    padding: 20px; /*内側の余白*/
+    border-radius: 5px; /*角を丸くする*/
+    border: 1px solid #ef9a9a; /*枠線の色と太さ*/
+    margin-bottom: 20px; /*下の余白*/
+}
+
+.error-messages h3 {
+    color: #c62828; /*エラーメッセージのタイトルの文字色*/
+    margin-top: 0; /*上の余白をなくす*/
+    margin-bottom: 15px; /*下の余白*/
+    text-align: center; /*中央寄せ*/
+}
+
+.error-messages ul {
+    list-style: none; /*リストのスタイルをなしにする*/
+    padding: 0; /*パディングをなくす*/
+    margin: 0; /*マージンをなくす*/
+}
+
+.error-messages li {
+    margin-bottom: 8px; /*各エラーメッセージの下の余白*/
+    padding-left: 20px; /*左の余白*/
+    position: relative; /*相対位置を設定*/
+}
+.error-messages li::before {
+    content: "・"; /*エラーマークを表示*/
+    color: #d32f2f; /*エラーマークの色*/
+    font-weight: bold; /*太字にする*/
+    display: inline-block; /*インラインブロックにして余白を調整*/
+    width: 1em; /*エラーマークの幅を設定*/
+    margin-left: -1em; /*左の余白を調整*/
+}
+
+.button-group {
+    text-align: center; /*ボタンを中央寄せ*/
+    margin-top: 30px; /*上の余白*/
+}
+
+.button-group button {
+    background-color: #6c757d; /*ボタンの背景色*/
+    color: white; /*ボタンの文字色*/
+    border: none; /*枠線なし*/
+    padding: 12px 20px; /*内側の余白*/
+    border-radius: 4px; /*角を丸くする*/
+    font-size: 16px; /*フォントサイズ*/
+    cursor: pointer; /*カーソルをポインターに変更*/
+    margin: 0 10px; /*左右の余白*/
+    width: auto; /*幅を自動に設定*/
+    display: inline-block; /*インラインブロックにして中央寄せ*/
+    transition: background-color 0.3s ease; /*ホバー時の背景色の変化をスムーズに*/
+}
+
+.button-group button:hover {
+    background-color: #5a6268; /*ホバー時の背景色*/
+}
