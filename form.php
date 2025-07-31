@@ -2,20 +2,20 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-waidth, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>フォーム入力</title>
     <link rel="stylesheet" href="style.css">
-<head>
+</head>
 <body>
     <div class="container">
         <h1>フォーム入力</h1>
         <form
          action="confirm.php" method="post">
-            <div class="form-group>
+            <div class="form-group">
                 <label for="name">名前:</label>
                 <input type="text" id="name" name="name" required>
             </div>
-            <div class="form-group>
+            <div class="form-group">
                 <label for="age">年齢:</label>
                 <input type="number" id="age" name="age" required>
             </div>
@@ -33,14 +33,14 @@
             </div>
             <div class="form-group">
                 <label for="question">質問:</label>
-                <inpuut type="text" id="question" name="question">
+                <input type="text" id="question" name="question">
             </div>
-            <div class="from-group">
+            <div class="form-group">
                 <label for=gender>性別:</label>
                 <select id="gender" name="gender">
-                    <option value="male">男性</option>
-                    <option value="female">女性</option>
-                    <option value="other">その他</option>
+                    <option value="男性">男性</option>
+                    <option value="女性">女性</option>
+                    <option value="その他">その他</option>
                 </select>
             </div>
             <button type="submit" class="submit-button">送信</button>

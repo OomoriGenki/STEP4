@@ -1,7 +1,7 @@
 /*全体のリセットと基本設定*/
 body {
-    fonto-family: Arial, sans-serif;
-    background-colar: #f0f2f5; /* 背景色 */
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* 背景色 */
     display: flex; /*中央寄せのためにFlexboxを使用*/
     justify-content: center; /* 水平方向の中央寄せ */
     align-items: center; /* 垂直方向の中央寄せ */
@@ -45,9 +45,10 @@ h1 {
     text-align: left; /*左寄せ*/
 }
 
+.form-group input:not([type="radio"]):not([type="checkbox"]),
 .form-group select {
     width: 100%; /*入力欄の幅を100%に設定*/
-    padding: 8px 10px; /*内側の余白*/
+    padding: 10px; /*内側の余白*/
     height: 40px; /* 高さを明示的に指定して揃える */
     border: 1px solid #ccc; /*枠線の色と太さ*/
     border-radius: 4px; /*角を丸くする*/
@@ -69,7 +70,7 @@ h1 {
     background-color: #007bff; /*ボタンの背景色*/
     color: white; /*ボタンの文字色*/
     border: none; /*枠線なし*/
-    padding: 12px 20px; /*内側の余白*/
+    padding: 12px; /*内側の余白*/
     border-radius: 4px; /*角を丸くする*/
     font-size: 16px; /*フォントサイズ*/
     cursor: pointer; /*カーソルをポインターに変更*/
