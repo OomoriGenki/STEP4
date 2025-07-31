@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-waidth, initial-scale=1.0">
-    <title>フォーム</title>
+    <title>フォーム入力</title>
     <link rel="stylesheet" href="style.css">
 <head>
 <body>
     <div class="container">
-        <h1>フォーム</h1>
+        <h1>フォーム入力</h1>
         <form
          action="confirm.php" method="post">
             <div class="form-group>
@@ -33,7 +33,7 @@
             </div>
             <div class="form-group">
                 <label for="question">質問:</label>
-                <inpuut type="text" id="question" name="question" required>
+                <inpuut type="text" id="question" name="question">
             </div>
             <div class="from-group">
                 <label for=gender>性別:</label>
@@ -43,7 +43,7 @@
                     <option value="other">その他</option>
                 </select>
             </div>
-            <button type="submit">送信</button>
+            <button type="submit" class="submit-button">送信</button>
         </form>
     </div>
 </body>
